@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.nav{
+    position: fixed;
+}
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+    border-bottom: 1px solid gray;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+.user-icon{
+    font-size: 34px;
+    cursor: pointer; 
+}
+.user-icon:hover{
+    background-color: #f0f0f0;
+    border-bottom: 1px solid gray;
+    border-radius: 50%;
+}
+.profile-dropdown{
+ position: absolute;
+ width: auto;
+ top: 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+}
+
+.profile-dropdown li{
+    border-bottom: 1px solid gray;
+    background-color:  #f0f0f06c;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px 0 5px;
+    cursor: pointer;
+}
+.profile-dropdown li:hover{
+    border-bottom: none;
+    background-color:  black;
+    color: white;
+}
+
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .user-icon{
+        margin-left: 18px;
+    }
+    .profile-dropdown{
+        border: 1px solid rgb(230, 230, 230);
+        position: static;
+        margin-top: 30px;
+        z-index: 999;
+       }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+@media(max-width: 953px){
+    nav a{
+        padding: 0 20px;
+    }
+}

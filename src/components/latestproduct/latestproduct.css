@@ -1,0 +1,20 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-size: 40px;
+    border-bottom: 1px solid grey;
+}
+
+.heading-container{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 550px){
+    .heading{
+        font-size: 20px; 
+    }
+ }

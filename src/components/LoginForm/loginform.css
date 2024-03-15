@@ -1,0 +1,59 @@
+.brand-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.col form{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    background-color: white;
+}
+form input{
+    padding: 5px;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    border: 1px solid gray;
+    outline: none;
+}
+.link-forgot-password{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.btn-login-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.link-signup-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.error{
+    color: red;
+    font-size: 12px;
+    /* display: none; */
+}
+
+@media(max-width: 800px){
+    .form-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: auto;
+    }
+}
