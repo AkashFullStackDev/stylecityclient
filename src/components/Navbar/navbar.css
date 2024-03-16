@@ -8,8 +8,6 @@ body{
 }
 .nav{
     position: fixed;
-}
-nav{
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -36,8 +34,11 @@ nav a{
     color: black;
 }
 nav a:hover{
-    background-color: #f0f0f0;
-    border-bottom: 1px solid gray;
+    /* background-color: #f0f0f0; */
+    /* border-bottom: 1px solid gray; */
+    color: white;
+    text-shadow: 0 0 3px #fa49e2, 0 0 5px #f70707;
+    
 }
 nav li:first-child{
     margin-right: auto;

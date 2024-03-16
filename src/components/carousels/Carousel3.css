@@ -1,0 +1,28 @@
+.carousel3-container{
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+}
+.carousel3-images-container{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.carousel3-images-container .carousel3-image{
+    width: 500px;
+    height: 250px;
+    transition: all 0.6s ease;
+}
+.carousel3-images-container .carousel3-image img{
+    width: 520px;
+    height: 250px;
+    object-fit: cover;
+}
+@media(max-width: 400px){
+    .carousel3-container{
+        width: 100vw;
+    }
+  }
